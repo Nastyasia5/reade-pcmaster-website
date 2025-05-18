@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <link rel="icon" type="image/png" href="./images/favicon-img.png">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pkmaster.kiev.ua</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script type="module" src="./js/index.js"></script>
+  </head>
+  <body>
+    <header class="mobile-header">
+      <div class="container header-flex-container">
+        <a href="./index.html" class="logo mobile-header-logo"
+          >ПК <span class="header-nav-logo-dark">МАЙСТЕР</span></a
+        >
+        <button
+          type="button"
+          class="mobile-header-hamburger-button"
+          data-modal="mobile-open">
+          <svg class="mobile-header-hamburger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-hamburger"></use>
+          </svg>
+        </button>
+        <div class="mobile-header-menu">
+          <button
+            type="button"
+            class="close-button mobile-menu-close-button"
+            data-modal="mobile-close">
+            <svg class="close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="mobile-header-nav">
+            <ul class="mobile-header-nav-list">
+              <li class="mobile-header-nav-item">
+                <a href="#services" class="mobile-header-nav-link active"
+                  >Наші послуги</a
+                >
+              </li>
+              <li class="mobile-header-nav-item">
+                <a href="#price" class="mobile-header-nav-link"
+                  >Ціни</a
+                >
+              </li>
+              <li class="mobile-header-nav-item">
+                <a href="#contact" class="mobile-header-nav-link">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="mobile-header-address">
+            <ul class="mobile-header-address-list">
+              <li class="mobile-header-address-item">
+                <a href="tel:+380995558996"
+                  class="mobile-header-address-link">
+                  <img src="./images/img-call.png" alt="Call" />
+                +38 (099) 555-89-96</a>
+              </li>
+              <li class="mobile-header-address-item">
+                <a
+                  href="https://t.me/pkmaster_ua"
+                  class="mobile-header-address-link">
+                  <img src="./images/img-telegram.png" alt="Telegram" />Telegram</a>
+              </li>
+              <li class="mobile-header-address-item">
+                <a href="viber://chat?number=%2B380995558996" class="mobile-header-address-link">
+                  <img src="./images/img-viber.png" alt="Viber" />Viber</a>
+            </ul>
+          </address>
+        </div>
+      </div>
+    </header>
+    <header class="header">
+      <div class="container header-flex-container">
+        <nav class="header-nav">
+          <a href="./index.html" class="logo header-logo"
+            >ПК <span class="header-nav-logo-dark">МАЙСТЕР</span></a
+          >
+          <ul class="header-nav-list">
+            <li class="header-nav-item">
+              <a href="#services" class="header-nav-link active">Наші послуги</a>
+            </li>
+            <li class="header-nav-item">
+              <a href="#price" class="header-nav-link">Ціни</a>
+            </li>
+            <li class="header-nav-item">
+              <a href="#contact" class="header-nav-link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="header-address">
+          <ul class="header-address-list">
+            <li class="header-address-item">
+              <a href="tel:+380995558996" class="header-address-link">
+              <img src="./images/img-call.png" alt="Call" />
+                +38 (099) 555-89-96</a>
+            </li>
+            <li class="header-address-item">
+              <a href="https://t.me/pkmaster_ua" class="header-address-link">
+                <img src="./images/img-telegram.png" alt="Telegram" />Telegram</a
+              >
+            </li>
+            <li class="header-address-item">
+              <a href="viber://chat?number=%2B380995558996" class="header-address-link">
+              <img src="./images/img-viber.png" alt="Viber" />
+                Viber</a>
+            </li>
+          </ul>
+        </address>
+      </div>
+    </header>
+    <main>
+      <!-- Хіро -->
+     <section class="hero">
+  <div class="container hero-content">
+    <div class="hero-text">
+      <h1>ПК МАЙСТЕР</h1>
+      <p>Ремонт комп'ютерів та ноутбуків у Києві та області</p>
+      <p>Професійний сервіс, діагностика та гарантія на роботи</p>
+      <button type="button" class="button-main" data-modal="open">Замовити</button>
+    </div>
+    <div class="hero-image">
+      <img src="./images/hero-img.png" alt="Hero image" />
+    </div>
+  </div>
+</section>
+          <!-- Наші послуги -->
+      <section class="section our-services-section" id="services">
+        <div class="container">
+          <h2 class="section-title">Наші послуги</h2>
+          <ul class="our-services-list">
+            <li class="our-services-item">
+              <img
+                srcset="./images/vuizd-master.png 1x,  
+                ./images/vuizd-master.png 2x"
+                 
+                src="./images/vuizd-master.png"
+                alt="Виїзд майстра та диагностика"
+                width="264" />
+              <div class="our-services-item-description-wrapper">
+                <h3 class="our-services-item-title">Виїзд та діагностика</h3>
+                <p class="our-services-item-text">Виїзд майстра додому чи в офіс.</p>
+                <p class="our-services-item-text">Діагностика обладнання.</p>
+                <p class="our-services-item-text">Швидке виявлення поломки.</p>
+              </div>
+            </li>
+            <li class="our-services-item">
+              <img
+                srcset="./images/remont-noytbykiv.png 1x,
+                 ./images/remont-noytbykiv.png 2x"
+
+                src="./images/remont-noytbykiv.png"
+                alt="Ремонт ноутбуків"
+                width="264" />
+              <div class="our-services-item-description-wrapper">
+                <h3 class="our-services-item-title">Ремонт ноутбуків</h3>
+                <p class="our-services-item-text">Ремонт та заміна модулів.</p>
+                <p class="our-services-item-text">Корпусний ремонт ноутбука.</p>
+                <p class="our-services-item-text">Чистка з повним розбиранням.</p>
+              </div>
+            </li>
+            <li class="our-services-item">
+              <img
+                srcset="
+                  ./images/remont-pc.png    1x,
+                  ./images/remont-pc.png 2x"
+                src="./images/remont-pc.png"
+                alt="Ремонт комп’ютерів"
+                width="264" />
+              <div class="our-services-item-description-wrapper">
+                <h3 class="our-services-item-title">Ремонт комп’ютерів</h3>
+                <p class="our-services-item-text">Чистка та заміна термопасти.</p>
+                <p class="our-services-item-text">Ремонт та заміна деталей.</p>
+                <p class="our-services-item-text">Модернізація комп’ютера.</p>
+              </div>
+            </li>
+            <li class="our-services-item">
+              <img
+                srcset="
+                  ./images/windows-services.png    1x,
+                  ./images/windows-services.png 2x
+                "
+                src="./images/windows-services.png"
+                alt="Windows та П.З."
+                width="264" />
+              <div class="our-services-item-description-wrapper">
+                <h3 class="our-services-item-title">Windows та П.З.</h3>
+                <p class="our-services-item-text">Встановлення Windows.</p>
+                <p class="our-services-item-text">Встановлення програм.</p>
+                <p class="our-services-item-text">Налаштування комп’ютера.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Ціни -->
+      <section class="section" id="price">
+        <div class="container">
+          <h2 class="section-title">Ціни</h2>
+          <ul class="price-list">
+            <li class="price-item">
+              <div class="price-image-thumb">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/windows-price.png    1x,
+                      ./images/windows-price.png 2x
+                    "
+                    type="image/png"
+                    media="(max-width: 767px)"
+                    width="288px"
+                    height="280px" />
+
+                  <source
+                    srcset="
+                      ./images/windows-price.png    1x,
+                      ./images/windows-price.png 2x
+                    "
+                    type="image/png"
+                    media="(max-width: 1157px)"
+                    width="356px"
+                    height="300px" />
+
+                  <source
+                    srcset="
+                      ./images/windows-price.png    1x,
+                      ./images/windows-price.png 2x
+                    "
+                    type="image/png"
+                    media="(min-width: 1158px)"
+                    width="360px"
+                    height="300px" />
+
+                  <img src="./images/windows-price.png" alt="Windows" />
+                </picture>
+                <ul class="price-image-overlay">
+                  <li>Встановлення WINDOWS від - 500грн.</li>
+                  <li>Перевстановлення WINDOWS від - 500грн.</li>
+                  <li>Відновлення WINDOWS від - 800грн.</li>
+                  <li>Налаштування WINDOWS від - 300грн.</li>
+                  <li>Оновлення Windows до новішої версії від - 500грн.
+                  (Наприклад: з Windows 10 до Windows 11)</li>
+                  <li>Встановлення Windows на SSD + клонування даних від - 800грн.
+                  (Актуально при апгрейді зі старого жорсткого диску)</li>
+                </ul>
+              </div>
+              <div class="price-item-description-wrapper">
+                <h3 class="price-item-title">Windows</h3>
+              </div>
+            </li>
+            <li class="price-item">
+              <div class="price-image-thumb">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/noytbyki-price.png   1x,
+                      ./images/noytbyki-price.png 2x
+                    "
+                    type="image/png"
+                    media="(max-width: 767px)"
+                    width="288px"
+                    height="280px" />
+
+                  <source
+                    srcset="
+                      ./images/noytbyki-price.png   1x,
+                      ./images/noytbyki-price.png 2x
+                    "
+                    type="image/png"
+                    media="(max-width: 1157px)"
+                    width="356px"
+                    height="300px" />
+
+                  <source
+                    srcset="
+                      ./images/noytbyki-price.png    1x,
+                      ./images/noytbyki-price.png 2x
+                    "
+                    type="image/png"
+                    media="(min-width: 1158px)"
+                    width="360px"
+                    height="300px" />
+
+                  <img
+                    src="./images/noytbyki-price.png"
+                    alt="Ноутбуки" />
+                </picture>
+                <ul class="price-image-overlay">
+                  <li>Діагностика ноутбука від - 800грн.</li>
+                  <li>Розбірка та збірка ноутбука від - 500грн.</li>
+                  <li>Чистка ноутбука від пилу від - 300грн.</li>
+                  <li>Заміна термоінтерфейсу (термопасти та термопрокладок) від - 300грн.</li>
+                  <li>Заміна екрану на ноутбуці від - 500грн.</li>
+                  <li>Заміна клавіатури від - 400грн.</li>
+                  <li>Ремонт або заміна петель / корпусу ноутбука від - 800грн.</li>
+                  <li>Ремонт системи живлення від - 1.000грн.</li>
+                </ul>
+              </div>
+              <div class="price-item-description-wrapper">
+                <h3 class="price-item-title">Ноутбуки</h3>
+              </div>
+            </li>
+            <li class="price-item">
+              <div class="price-image-thumb">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/pk-price.png    1x,
+                      ./images/pk-price.png 2x
+                    "
+                    type="image/png"
+                    media="(max-width: 767px)"
+                    width="288px"
+                    height="280px" />
+
+                  <source
+                    srcset="
+                      ./images/pk-price.png    1x,
+                      ./images/pk-price.png 2x
+                    "
+                    type="image/png"
+                    media="(max-width: 1157px)"
+                    width="356px"
+                    height="300px" />
+
+                  <source
+                    srcset="
+                      ./images/pk-price.png    1x,
+                      ./images/pk-price.png 2x
+                    "
+                    type="image/png"
+                    media="(min-width: 1158px)"
+                    width="360px"
+                    height="300px" />
+
+                  <img src="./images/pk-price.png" alt="Комп’ютери" />
+                </picture>
+                <ul class="price-image-overlay">
+                  <li>Діагностика комп’ютера від - 500грн.</li>
+                  <li>Збірка комп’ютера “під ключ” (під замовлення) від - 1.000грн.</li>
+                  <li>Апгрейд комп’ютера (заміна або додавання компонентів) від - 500грн.</li>
+                  <li>Чистка системного блоку від - пилу від - 400грн.</li>
+                  <li>Заміна термопасти (процесор / відеокарта) від - 300грн.</li>
+                  <li>Встановлення або заміна SSD / HDD від - 200грн.</li>
+                </ul>
+              </div>
+              <div class="price-item-description-wrapper">
+                <h3 class="price-item-title">Комп’ютери</h3>
+              </div>
+            </li>
+            <li class="price-item">
+              <div class="price-image-thumb">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/internet-price.png    1x,
+                      ./images/internet-price.png 2x
+                    "
+                    type="image/png"
+                    media="(max-width: 767px)"
+                    width="288px"
+                    height="280px" />
+
+                  <source
+                    srcset="
+                      ./images/internet-price.png    1x,
+                      ./images/internet-price.png 2x
+                    "
+                    type="image/png"
+                    media="(max-width: 1157px)"
+                    width="356px"
+                    height="300px" />
+
+                  <source
+                    srcset="
+                      ./images/internet-price.png    1x,
+                      ./images/internet-price.png 2x
+                    "
+                    type="image/png"
+                    media="(min-width: 1158px)"
+                    width="360px"
+                    height="300px" />
+
+                  <img src="./images/internet-price.png" alt="Інтернет" />
+                </picture>
+                <ul class="price-image-overlay">
+                 <li>Налаштування роутера від - 500грн.</li>
+                 <li>Налаштування Wi-Fi від - 500грн.</li>
+                 <li>Точка Wi-Fi «під ключ» від - 500грн.</li>
+                 <li>Підключення до Інтернету	від - 450грн.</li>
+                </ul>
+              </div>
+              <div class="price-item-description-wrapper">
+                <h3 class="price-item-title">Інтернет</h3>
+              </div>
+            </li>
+            <li class="price-item">
+              <div class="price-image-thumb">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/viruses-price.png    1x,
+                      ./images/viruses-price.png 2x
+                    "
+                    type="image/png"
+                    media="(max-width: 767px)"
+                    width="288px"
+                    height="280px" />
+
+                  <source
+                    srcset="
+                      ../images/viruses-price.png    1x,
+                      ./images/viruses-price.png 2x
+                    "
+                    type="image/png"
+                    media="(max-width: 1157px)"
+                    width="356px"
+                    height="300px" />
+
+                  <source
+                    srcset="
+                      ./images/viruses-price.png    1x,
+                      ./images/viruses-price.png 2x
+                    "
+                    type="image/png"
+                    media="(min-width: 1158px)"
+                    width="360px"
+                    height="300px" />
+
+                  <img
+                    src="./images/viruses-price.png"
+                    alt="Віруси" />
+                </picture>
+                <ul class="price-image-overlay">
+                  <li>Видалення вірусів	від - 450грн.</li>
+                  <li>Видалення банерів	від - 500грн.</li>
+                  <li>Видалення блокувальників від - 500грн.</li>
+                  <li>Встановлення будь-якого антивірусу від - 350грн.</li>
+                  <li>Чистка системи після зараження від - 850грн.</li>
+                  <li>Налаштування антивірусної програми від - 250грн.</li>
+                  <li>Проведення повної перевірки на наявність вірусів від - 1.000грн.</li>           
+                </ul>
+              </div>
+              <div class="price-item-description-wrapper">
+                <h3 class="price-item-title">Віруси</h3>
+              </div>
+            </li>
+            <li class="price-item">
+              <div class="price-image-thumb">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/pz-price.png    1x,
+                      ./images/pz-price.png 2x
+                    "
+                    type="image/jpeg"
+                    media="(max-width: 767px)"
+                    width="288px"
+                    height="280px" />
+
+                  <source
+                    srcset="
+                      ./images/pz-price.png    1x,
+                      ./images/pz-price.png 2x
+                    "
+                    type="image/jpeg"
+                    media="(max-width: 1157px)"
+                    width="356px"
+                    height="300px" />
+
+                  <source
+                    srcset="
+                      ./images/pz-price.png    1x,
+                      ./images/pz-price.png 2x
+                    "
+                    type="image/jpeg"
+                    media="(min-width: 1158px)"
+                    width="360px"
+                    height="300px" />
+
+                  <img src="./images/pz-price.png" alt="Online Courses" />
+                </picture>
+                <ul class="price-image-overlay">
+                  <li>Встановлення Office від - 500грн.</li>
+                  <li>Встановлення антивірусу від - 300грн.</li>
+                  <li>Встановлення драйверів від - 30грн.</li>
+                  <li>Встановлення аудіо, відео плеерів від - 100грн.</li>
+                  <li>Встановлення інтернет програм від - 100грн.</li>
+                  <li>Встановлення Архіваторів від - 50грн.</li>
+                  <li>Встановлення Adob Photoshop від - 500грн.</li>
+                  <li>Встановлення adobe reader від - 150грн.</li>
+                  <li>Та багато іншого.</li>
+                </ul>
+              </div>
+              <div class="price-item-description-wrapper">
+                <h3 class="price-item-title">Програми</h3>
+                <p class="price-item-text"></p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Відповіді на поширені запитання -->
+<section class="section faq-section">
+  <div class="container faq-container">
+    <h2 class="section-title">Відповіді на поширені запитання</h2>
+
+    <ul class="faq-list">
+      <li class="faq-item">
+        <details>
+          <summary>Як викликати комп’ютерного майстра?</summary>
+          <p>Зателефонуйте або залиште заявку на сайті, і ми вам зателефонуємо.</p>
+        </details>
+      </li>
+      <li class="faq-item">
+        <details>
+          <summary>Де будуть виконуватись роботи?</summary>
+          <p>До 90% несправностей наші фахівці усувають на виїзді.</p>
+          <p>Завдяки сучасному обладнанню та підтримці виробника, такі роботи, як заміна роз’ємів, жорсткого диска, ремонт екрана, усунення програмних збоїв, виконуються вдома або в офісі швидко й якісно.</p>
+          <p>У рідкісних випадках техніка доставляється до сервісного центру й повертається безкоштовно після ремонту.</p>
+        </details>
+      </li>
+      <li class="faq-item">
+        <details>
+          <summary>Всі деталі в наявності чи потрібно буде чекати?</summary>
+          <p>Більшість деталей є в наявності. У разі відсутності — оперативно замовляємо.</p>
+        </details>
+      </li>
+      <li class="faq-item">
+        <details>
+          <summary>Як швидко приїде майстер чи кур’єр?</summary>
+          <p>В середньому протягом 1-2 годин після замовлення.</p>
+        </details>
+      </li>
+      <li class="faq-item">
+        <details>
+          <summary>Скільки часу зазвичай потрібно на ремонт?</summary>
+          <p>Від 30 хвилин до кількох годин, залежно від складності.</p>
+        </details>
+      </li>
+      <li class="faq-item">
+        <details>
+          <summary>Чи може змінитися ціна у процесі ремонту?</summary>
+          <p>Ціна уточнюється після діагностики та не змінюється без погодження.</p>
+        </details>
+      </li>
+    </ul>
+  </div>
+     </main>
+     <!--Контакти-->
+<section class="contact-section" id="contact">
+  <div class="container contact-wrapper">
+    <div class="contact-info" id="contact">
+      <h2 class="contact-title">
+        Потрібна Допомога? <span><br>Наші Контакти</span>
+      </h2>
+      <ul class="contact-list">
+        <li>
+          <img src="./images/img-call.png" alt="Phone" />
+          <a href="tel:+380995558996">+38 (099) 555-89-96</a>
+        </li>
+        <li>
+          <img src="./images/img-telegram.png" alt="Telegram" />
+          <a href="https://t.me/pkmaster_ua" target="_blank">Написати в Telegram</a>
+        </li>
+        <li>
+          <img src="./images/img-viber.png" alt="Viber" />
+          <a href="viber://chat?number=%2B380995558996">Написати у Viber</a>
+        </li>
+      </ul>
+    </div>
+    <form class="contact-form">
+      <label>
+        Ім’я
+        <div class="input-icon-wrapper">
+          <input type="text" name="name" placeholder="Введіть ім’я" required />
+          <svg class="input-icon" width="18" height="18">
+            <use href="./images/icons.svg#icon-person"></use>
+          </svg>
+        </div>
+      </label>
+
+      <label>
+        Номер телефону
+        <div class="input-icon-wrapper">
+          <input type="tel" name="phone" placeholder="Введіть номер" required />
+          <svg class="input-icon" width="18" height="18">
+            <use href="./images/icons.svg#icon-phone"></use>
+          </svg>
+        </div>
+      </label>
+
+      <label>
+        Опишіть вашу проблему
+        <textarea name="message" placeholder="Введіть текст" required></textarea>
+      </label>
+
+      <button type="submit">Відправити</button>
+    </form>
+</section>
+    <!-- Футер -->
+    <footer class="footer">
+  <div class="footer-inner">
+    <h2 class="footer-title">
+      <span class="footer-title-green">ПК </span><span class="footer-title-white">Майстер</span>
+    </h2>
+    <p class="footer-copy">
+      © 2025 ПК Майстер — Ремонт комп'ютерів у Києві та області
+    </p>
+  </div>
+        <script src="./js/telegram-form.js"></script>
+    </footer>
+    <!-- Модальне вікно -->
+    <div class="overlay" data-modal="overlay">
+      <div class="overlay-modal">
+        <button type="button" class="close-button" data-modal="close">
+          <svg class="close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="order-form-header">
+          Заповніть форму та опишіть вашу проблему з Вами обов'язково зв'яжуться
+        </p>
+        <form class="order-form">
+          <div class="order-form-input-label-wrapper">
+            <label class="order-form-label" for="user-name">Ім'я</label>
+            <div class="order-form-input-wrapper">
+              <input
+                class="order-form-input-text"
+                type="text"
+                id="user-name"
+                name="user-name" />
+              <svg class="order-form-input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="order-form-input-label-wrapper">
+            <label class="order-form-label" for="user-phone">Номер телефону</label>
+            <div class="order-form-input-wrapper">
+              <input
+                class="order-form-input-text"
+                type="text"
+                id="user-phone"
+                name="user-phone" />
+              <svg class="order-form-input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="order-form-textarea-label-wrapper">
+            <label class="order-form-label" for="user-comment">Опишіть вашу проблему</label>
+            <textarea
+              class="order-form-input-text textarea"
+              placeholder="Введіть текст"
+              name="user-comment"
+              id="user-comment"></textarea>
+          </div>
+            <div class="checkbox-agreement-wrapper">
+            <input
+              class="order-form-input-checkbox visually-hidden"
+              type="checkbox"
+              name="user-privacy"
+              id="user-privacy"
+              value="true" />
+          </div>
+          <button class="button-main order-submit-button" type="submit">
+            Відправити
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
